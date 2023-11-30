@@ -102,8 +102,8 @@ function getImgId(max) {
 }
 
 function buildName() {
-  const arr1 = [' адский', ' ржавый', ' черный',]
-  const arr2 = [' запой', ' мангус', ' юмор',]
+  const arr1 = [' адский', ' ржавый', ' черный']
+  const arr2 = [' запой', ' мангус', ' юмор']
   let str = []
 
   for (let i = 0; i < arr1.length; i++) {
