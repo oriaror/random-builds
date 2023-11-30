@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/main.css">
+  <script src="/index.js" defer></script>
+</head>
+
+<body>
+  <header class="header">Dota Random builds</header>
+
+  <div class="button_container">
+    <img data-f="uni" onclick="changeFilterValue(event)" class="btn" src="typeofatribute/filter-all-active.png" alt="">
+    <img data-f="agi" onclick="changeFilterValue(event)" class="btn" src="typeofatribute/filter-agi-active.png" alt="">
+    <img data-f="int" onclick="changeFilterValue(event)" class="btn" src="typeofatribute/filter-int-active.png" alt="">
+    <img data-f="all" onclick="changeFilterValue(event)" class="btn" src="typeofatribute/filter-uni-active.png" alt="">
+    <img data-f="str" onclick="changeFilterValue(event)" class="btn" src="typeofatribute/filter-str-active.png" alt="">
+  </div>
+
+  <div class="heroes">
+  </div>
+
+
+  <div id="backdrop" class="backdrop">
+    <div id="modal" class="modal">
+      <button id="close_btn" onclick="closeModal()">X</button>
+      <p class="modal_name"></p>
+      <p class="build_name"></p>
+      <div id="random">
+        <div id="artifacts">
+          <div id="item1" class="column"></div>
+          <div id="item2" class="column"></div>
+          <div id="item3" class="column"></div>
+          <div id="item4" class="column"></div>
+          <div id="item5" class="column"></div>
+          <div id="item6" class="column"></div>
+        </div>
+      </div>
+      <button class="spin" onclick="fillSlots()">Create Build</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
