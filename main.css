@@ -94,7 +94,7 @@
    flex-direction: column;
    align-items: center;
    max-width: 450px;
-   width: 100% calc(100% - 100px);
+   width: calc(100% - 100px);
    padding: 12px;
    border-radius: 4px;
    min-height: 200px;
